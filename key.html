@@ -1,0 +1,25 @@
+ <html>
+<head>
+<meta charset="UTF-8">
+<title>Key Detection </title>
+<script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+</body>
+<script>
+var arrayofkeys = [];
+
+document.onkeypress = function (parameter) {
+  var keypressed;
+  keypressed = event.keyCode;
+  keyz = arrayofkeys.push(String.fromCharCode(keypressed));
+  var cornify = arrayofkeys.join('');
+  var n = cornify.search('cornify');
+  if(n !== -1) {
+    cornify_add();
+  }
+  console.log(n);
+
+};
+</script>
+</html
